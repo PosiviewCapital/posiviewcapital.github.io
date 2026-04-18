@@ -16,8 +16,8 @@
   --g2: #2E9E34;   /* mid green  */
   --g3: #4DC952;   /* bright green */
   --g4: #C8EFC9;   /* pale green */
-  --dark: #0F1010;
-  --ink:  #1C1E1C;
+  --dark: #1E2122;
+  --ink:  #242624;
   --char: #252826;
   --warm: #F5F2EC;
   --sand: #E8E3D8;
@@ -204,13 +204,13 @@ img { display: block; max-width: 100%; }
 
 .hero-desc {
   font-size: 1rem; font-weight: 300; line-height: 1.85;
-  color: rgba(255,255,255,0.6); max-width: 440px;
+  color: rgba(255,255,255,0.85); max-width: 440px;
   margin-bottom: 2.5rem;
   opacity: 0; animation: riseUp 0.8s var(--ease) 0.4s forwards;
 }
 
 .hero-ctas {
-  display: flex; gap: 1rem; flex-wrap: wrap;
+  display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;
   opacity: 0; animation: riseUp 0.8s var(--ease) 0.55s forwards;
 }
 .btn-dark-primary {
@@ -223,7 +223,7 @@ img { display: block; max-width: 100%; }
 }
 .btn-dark-primary:hover { background: var(--g2); border-color: var(--g2); transform: translateY(-2px); }
 .btn-dark-ghost {
-  color: rgba(255,255,255,0.7); border: 1.5px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.90); border: 1.5px solid rgba(255,255,255,0.50);
   padding: 0.9rem 2rem; border-radius: 2px;
   font-size: 0.82rem; font-weight: 500; letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -269,7 +269,7 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase; color: var(--mist);
   display: block; margin-bottom: 3px;
 }
-.stat-info .sub { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
+.stat-info .sub { font-size: 0.78rem; color: rgba(255,255,255,0.75); }
 
 /* Floating mark */
 .hero-mark {
@@ -287,7 +287,7 @@ img { display: block; max-width: 100%; }
   position: absolute; bottom: 2.5rem; left: 5rem;
   display: flex; align-items: center; gap: 0.75rem;
   font-size: 0.68rem; letter-spacing: 0.2em;
-  text-transform: uppercase; color: rgba(255,255,255,0.3);
+  text-transform: uppercase; color: rgba(255,255,255,0.65);
   z-index: 2;
   opacity: 0; animation: riseUp 1s var(--ease) 1.2s forwards;
 }
@@ -322,7 +322,7 @@ img { display: block; max-width: 100%; }
   font-size: 0.7rem; font-weight: 600;
   letter-spacing: 0.22em; text-transform: uppercase;
   color: rgba(255,255,255,0.8); padding: 0 2.5rem;
-  border-right: 1px solid rgba(255,255,255,0.2); flex-shrink: 0;
+  border-right: 1px solid rgba(255,255,255,0.50); flex-shrink: 0;
 }
 .ticker-item:last-child { border-right: none; }
 @keyframes ticker {
@@ -413,6 +413,7 @@ img { display: block; max-width: 100%; }
    SERVICES
 ═══════════════════════════════════════════════════ */
 #services { background: var(--ink); padding: 7rem 5rem; }
+#services .section-wrapper { max-width: 100%; }
 .services-top {
   display: flex; justify-content: space-between;
   align-items: flex-end; margin-bottom: 4rem;
@@ -420,11 +421,11 @@ img { display: block; max-width: 100%; }
 }
 .services-top .eyebrow { color: var(--g3); }
 .services-subtext {
-  font-size: 0.85rem; color: rgba(255,255,255,0.35);
+  font-size: 0.85rem; color: rgba(255,255,255,0.75);
   max-width: 280px; text-align: right; line-height: 1.75;
 }
 .services-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 1.5px; background: rgba(255,255,255,0.06);
 }
 .svc-card {
@@ -459,12 +460,12 @@ img { display: block; max-width: 100%; }
   margin-bottom: 1rem; line-height: 1.2;
 }
 .svc-card p {
-  font-size: 0.88rem; color: rgba(255,255,255,0.45);
+  font-size: 0.88rem; color: rgba(255,255,255,0.78);
   line-height: 1.8; font-weight: 300; margin-bottom: 1.75rem;
 }
 .svc-card ul { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
 .svc-card ul li {
-  font-size: 0.8rem; color: rgba(255,255,255,0.55);
+  font-size: 0.8rem; color: rgba(255,255,255,0.82);
   display: flex; align-items: flex-start; gap: 0.6rem; line-height: 1.5;
 }
 .svc-card ul li::before { content: '—'; color: var(--g2); flex-shrink: 0; }
@@ -493,7 +494,7 @@ img { display: block; max-width: 100%; }
 }
 .deal-type:hover { background: rgba(0,0,0,0.15); }
 .deal-type h4 { font-size: 0.88rem; font-weight: 600; color: var(--white); margin-bottom: 0.45rem; }
-.deal-type p { font-size: 0.75rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
+.deal-type p { font-size: 0.75rem; color: rgba(255,255,255,0.85); line-height: 1.6; }
 
 /* ═══════════════════════════════════════════════════
    SECTORS
@@ -513,7 +514,7 @@ img { display: block; max-width: 100%; }
 }
 .chip:hover { border-color: var(--g2); color: var(--g1); background: var(--g4); }
 .chip.active {
-  border-color: var(--g1); background: var(--g1); color: var(--white); font-weight: 600;
+  border-color: var(--ink); color: var(--ink);
 }
 
 /* ═══════════════════════════════════════════════════
@@ -561,7 +562,7 @@ img { display: block; max-width: 100%; }
 .marquee-wrap { display: flex; overflow: hidden; }
 .marquee-track {
   display: flex; flex-shrink: 0; gap: 0;
-  animation: marquee 22s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 .client-tag {
   padding: 0 3rem;
@@ -584,7 +585,7 @@ img { display: block; max-width: 100%; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7rem; align-items: start; }
 
 .contact-left .display.light { margin-bottom: 1.25rem; }
-.contact-left .body-copy { color: rgba(255,255,255,0.45); margin-bottom: 3rem; }
+.contact-left .body-copy { color: rgba(255,255,255,0.78); margin-bottom: 3rem; }
 
 .contact-list { display: flex; flex-direction: column; gap: 1.5rem; }
 .c-item {
@@ -602,7 +603,7 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase; color: var(--mist); display: block; margin-bottom: 3px;
 }
 .c-text .value {
-  font-size: 0.9rem; color: rgba(255,255,255,0.7);
+  font-size: 0.9rem; color: rgba(255,255,255,0.90);
 }
 .c-text .value a:hover { color: var(--g3); }
 
@@ -612,7 +613,7 @@ img { display: block; max-width: 100%; }
   background: rgba(46,158,52,0.05);
 }
 .disclaimer-block p {
-  font-size: 0.72rem; color: rgba(255,255,255,0.3); line-height: 1.8;
+  font-size: 0.72rem; color: rgba(255,255,255,0.65); line-height: 1.8;
 }
 .disclaimer-block strong { color: rgba(255,255,255,0.5); }
 
@@ -622,7 +623,7 @@ img { display: block; max-width: 100%; }
 .fgroup { display: flex; flex-direction: column; gap: 0.45rem; }
 .fgroup label {
   font-size: 0.65rem; letter-spacing: 0.2em;
-  text-transform: uppercase; color: rgba(255,255,255,0.35); font-weight: 500;
+  text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 500;
 }
 .fgroup input, .fgroup select, .fgroup textarea {
   background: rgba(255,255,255,0.04);
@@ -635,13 +636,13 @@ img { display: block; max-width: 100%; }
   -webkit-appearance: none;
 }
 .fgroup select option { background: var(--char); }
-.fgroup input::placeholder, .fgroup textarea::placeholder { color: rgba(255,255,255,0.2); }
+.fgroup input::placeholder, .fgroup textarea::placeholder { color: rgba(255,255,255,0.50); }
 .fgroup input:focus, .fgroup select:focus, .fgroup textarea:focus {
   border-color: var(--g2); background: rgba(46,158,52,0.06);
 }
 .fgroup textarea { resize: vertical; min-height: 120px; }
 .form-note {
-  font-size: 0.7rem; color: rgba(255,255,255,0.25);
+  font-size: 0.7rem; color: rgba(255,255,255,0.82);
   line-height: 1.6; padding: 0.75rem 0;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
@@ -673,7 +674,7 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.05);
 }
 .footer-brand .sub {
-  font-size: 0.65rem; color: rgba(255,255,255,0.25);
+  font-size: 0.65rem; color: rgba(255,255,255,0.82);
   margin-top: 4px; letter-spacing: 0.08em;
 }
 .footer-social {
@@ -682,19 +683,19 @@ footer {
 .footer-social a {
   display: flex; align-items: center; gap: 0.4rem;
   font-size: 0.68rem; letter-spacing: 0.08em;
-  color: rgba(255,255,255,0.28);
+  color: rgba(255,255,255,0.60);
   transition: color 0.2s;
   text-transform: uppercase;
 }
 .footer-social a:hover { color: var(--g3); }
 .footer-legal {
-  font-size: 0.68rem; color: rgba(255,255,255,0.2);
+  font-size: 0.68rem; color: rgba(255,255,255,0.50);
   text-align: center; line-height: 1.7;
 }
 .footer-nav {
   display: flex; gap: 1.5rem;
   font-size: 0.68rem; letter-spacing: 0.12em;
-  text-transform: uppercase; color: rgba(255,255,255,0.25);
+  text-transform: uppercase; color: rgba(255,255,255,0.82);
 }
 .footer-nav a:hover { color: var(--g3); }
 
@@ -718,6 +719,7 @@ footer {
 /* ═══════════════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════════════ */
+/* ── 980px (tablet / small desktop) ── */
 @media (max-width: 980px) {
   #nav { padding: 1rem 1.5rem; }
   #nav.scrolled { padding: 0.6rem 1.5rem; }
@@ -727,11 +729,13 @@ footer {
   .hero-right { display: none; }
   .hero-left { padding: 7.5rem 1.5rem 5rem; }
   .scroll-hint { left: 1.5rem; }
-  .section, .section-sm { padding: 5rem 1.5rem; }
+  .section, .section-sm { padding: 4rem 1.5rem; }
   #deal-banner { padding: 4rem 1.5rem; grid-template-columns: 1fr; gap: 2.5rem; }
-  .deal-types { grid-template-columns: 1fr; }
+  #quick-deals { padding: 4rem 1.5rem !important; }
+  .qd-grid { grid-template-columns: 1fr; }
+  .deal-types { grid-template-columns: 1fr 1fr; gap: 1px; }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .services-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
   .services-top { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .services-subtext { text-align: left; }
   .sectors-layout { grid-template-columns: 1fr; gap: 3rem; }
@@ -740,7 +744,110 @@ footer {
   .form-row { grid-template-columns: 1fr; }
   footer { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
   .footer-nav { justify-content: center; }
+  .footer-social { justify-content: center; }
 }
+
+/* ── 640px (mobile) ── */
+@media (max-width: 640px) {
+  #nav { padding: 0.85rem 1.25rem; }
+  .hero-left { padding: 6.5rem 1.25rem 3rem; }
+  .hero-h1 { font-size: 2.6rem; }
+  .hero-desc { font-size: 0.92rem; }
+  .hero-ctas { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .hero-pill { font-size: 0.62rem; }
+  .hero-stats-stack { display: none; }
+  .scroll-hint { display: none; }
+
+  .section, .section-sm { padding: 3.5rem 1.25rem; }
+  #services { padding: 3.5rem 1.25rem; }
+  #about { padding: 3.5rem 1.25rem; }
+  #sectors { padding: 3.5rem 1.25rem; }
+  #testimonials { padding: 3.5rem 1.25rem; }
+  #contact { padding: 3.5rem 1.25rem; }
+  #quick-deals { padding: 3.5rem 1.25rem !important; }
+  #deal-banner { padding: 3rem 1.25rem; }
+
+  .display { font-size: 1.9rem; }
+  .section-label, .eyebrow { font-size: 0.62rem; }
+
+  .services-grid { grid-template-columns: 1fr; }
+  .svc-card { padding: 2rem 1.5rem; }
+  .services-top { padding-bottom: 1.5rem; }
+
+  .stat-row { padding: 1.25rem 1.5rem; }
+  .stat-n { font-size: 2.5rem; }
+
+  .deal-types { grid-template-columns: 1fr; }
+
+  .pillar-item { flex-direction: column; gap: 0.75rem; }
+  .pillar-num { font-size: 1.4rem; }
+
+  .t-card { padding: 1.75rem; }
+  .t-quote-mark { font-size: 3rem; }
+
+  .contact-list { gap: 1.25rem; }
+  .c-icon { width: 36px; height: 36px; font-size: 0.85rem; }
+
+  .about-pillars, .pillar-list { gap: 1rem; }
+  .team-card { padding: 1.25rem; }
+
+  footer { padding: 2rem 1.25rem; gap: 1.5rem; }
+  .footer-nav { flex-wrap: wrap; gap: 1rem; justify-content: center; }
+  .footer-social { flex-wrap: wrap; justify-content: center; }
+
+  .mobile-menu a { font-size: 1.6rem; }
+  .qd-card { padding: 2rem 1.5rem; }
+  .btn-dark-primary, .btn-dark-ghost, .btn-dark-special { 
+    width: 100%; text-align: center; padding: 0.85rem 1.5rem;
+  }
+  .chip { font-size: 0.7rem; padding: 0.55rem 1rem; }
+  .sectors-grid { gap: 0.5rem; }
+}
+
+/* ═══════════════════════════════════════════════════
+   QUICK DEALS
+═══════════════════════════════════════════════════ */
+.qd-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.qd-card {
+  background: var(--white); padding: 2.5rem;
+  border: 1px solid rgba(0,0,0,0.08); border-radius: 1px;
+  border-top: 3px solid #c8840a;
+  transition: box-shadow 0.3s, transform 0.3s;
+  display: flex; flex-direction: column;
+}
+.qd-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+.qd-badge {
+  font-size: 2rem; margin-bottom: 1.25rem; line-height: 1;
+}
+.qd-card h3 {
+  font-family: var(--serif); font-size: 1.35rem;
+  font-weight: 600; color: var(--ink);
+  margin-bottom: 1rem; line-height: 1.25;
+}
+.qd-card p {
+  font-size: 0.88rem; color: var(--grey);
+  line-height: 1.8; font-weight: 300; flex: 1;
+  margin-bottom: 1.5rem;
+}
+.qd-link {
+  font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: #c8840a; align-self: flex-start;
+  border-bottom: 1.5px solid #c8840a;
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.qd-link:hover { color: var(--g1); border-color: var(--g1); }
+@media (max-width: 980px) {
+  .qd-grid { grid-template-columns: 1fr; }
+}
+
 </style>
 </head>
 <body>
@@ -807,6 +914,7 @@ footer {
     <div class="hero-ctas">
       <a href="#contact" class="btn-dark-primary">Discuss Your Deal</a>
       <a href="#services" class="btn-dark-ghost">Our Services →</a>
+      <a href="#quick-deals" class="btn-dark-special">⚡ Special Quick Deals</a>
     </div>
   </div>
 
@@ -870,6 +978,36 @@ footer {
     <span class="ticker-item">Deal Structuring</span>
   </div>
 </div>
+<!-- ══ SPECIAL QUICK DEALS ══════════════════════════ -->
+<section id="quick-deals" style="background:var(--warm); padding:6rem 5rem;">
+  <div class="reveal" style="text-align:center; margin-bottom:3.5rem;">
+    <div class="eyebrow" style="justify-content:center; display:flex;">⚡ Special Opportunities</div>
+    <h2 class="display" style="margin-top:0.5rem;">Special <em>Quick Deals</em></h2>
+    <p style="font-size:0.95rem; color:var(--grey); max-width:620px; margin:1.25rem auto 0; line-height:1.85; font-weight:300;">
+      Curated, time-sensitive opportunities for buyers and investors looking for quality businesses with clear rationale for a swift transaction.
+    </p>
+  </div>
+  <div class="qd-grid reveal reveal-d1">
+    <div class="qd-card">
+      <div class="qd-badge">🏠</div>
+      <h3>Promoter Retirement Opportunities</h3>
+      <p>Well managed companies available only due to the founder's decision to retire. Good quality products, long customer relationships, promoters with integrity and willingness to support transition for a few years.</p>
+      <a href="#contact" class="qd-link">Enquire →</a>
+    </div>
+    <div class="qd-card">
+      <div class="qd-badge">🔩</div>
+      <h3>Bolt-On Acquisitions</h3>
+      <p>Small &amp; midsized companies that can fill your gap for product extension, geographical expansion, or critical inputs. Ideal for strategic buyers looking to accelerate growth without building from scratch.</p>
+      <a href="#contact" class="qd-link">Enquire →</a>
+    </div>
+    <div class="qd-card">
+      <div class="qd-badge">🎯</div>
+      <h3>Special Focus Sectors</h3>
+      <p>We have deep origination in select sectors where we can present or source multiple opportunities as per your growth strategy. Check with us for our current focus sectors and live mandates.</p>
+      <a href="#contact" class="qd-link">Speak to Us →</a>
+    </div>
+  </div>
+</section>
 
 <!-- ══ ABOUT ══════════════════════════════════════ -->
 <section id="about" class="section">
@@ -997,6 +1135,30 @@ footer {
         <li>Single-point project management through close</li>
       </ul>
     </div>
+    <div class="svc-card">
+      <div class="svc-icon">🗂️</div>
+      <div class="svc-tag">Due Diligence</div>
+      <h3>Data Room &amp; Deal Support</h3>
+      <p>End-to-end support in setting up a comprehensive Data Room and managing the due diligence process for lenders and investors.</p>
+      <ul>
+        <li>Data room setup covering finance, legal &amp; compliance documents</li>
+        <li>Identify &amp; highlight key issues in finance, accounting &amp; legal</li>
+        <li>Groom founders to face investors with confidence</li>
+        <li>Co-ordinate with Auditors, Company Secretary &amp; Lawyers during DD</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">📋</div>
+      <div class="svc-tag">Fractional CFO</div>
+      <h3>e-CFO Services</h3>
+      <p>Fractional CFO services for growing enterprises — bringing 5+ decades of combined experience in financial, fund raising &amp; management accounting.</p>
+      <ul>
+        <li>Set up MIS systems &amp; robust financial processes</li>
+        <li>Support in hiring the right finance team</li>
+        <li>Professional support in handling lenders &amp; investors</li>
+        <li>Improves your company's fund raising readiness &amp; credibility</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -1047,9 +1209,9 @@ footer {
       </p>
     </div>
     <div class="sectors-grid reveal reveal-d2" style="align-content:start;">
-      <div class="chip active">Healthcare &amp; Fertility</div>
-      <div class="chip active">Fintech &amp; Payments</div>
-      <div class="chip active">Manufacturing &amp; Engineering</div>
+      <div class="chip">Healthcare &amp; Fertility</div>
+      <div class="chip">Fintech &amp; Payments</div>
+      <div class="chip">Manufacturing &amp; Engineering</div>
       <div class="chip">Defense Electronics</div>
       <div class="chip">Logistics &amp; Supply Chain</div>
       <div class="chip">EdTech &amp; SaaS</div>
@@ -1114,24 +1276,32 @@ footer {
   <div class="clients-eyebrow">Select Engagements &amp; Network</div>
   <div class="marquee-wrap">
     <div class="marquee-track">
-      <span class="client-tag">IndiaMart</span>
+      <span class="client-tag">Doorstep Health</span>
+      <span class="client-tag">BPC</span>
+      <span class="client-tag">Mascot Dynamics</span>
+      <span class="client-tag">CLN Energy</span>
+      <span class="client-tag">iCaltech Innovations</span>
+      <span class="client-tag">Entraco BKS</span>
+      <span class="client-tag">Siddhivinayak Agro</span>
       <span class="client-tag">SkyWaltz</span>
-      <span class="client-tag">ePravesh</span>
-      <span class="client-tag">AutomationEdge</span>
-      <span class="client-tag">Mobileware Technologies</span>
-      <span class="client-tag">Femelife Fertility</span>
-      <span class="client-tag">Om Logistics</span>
-      <span class="client-tag">WhyMinds AI</span>
+      <span class="client-tag">Purple Bus</span>
+      <span class="client-tag">Newaskar Logistics</span>
+      <span class="client-tag">Vilas Javdekar Associates</span>
+      <span class="client-tag">Beep</span>
     </div>
-    <div class="marquee-track" aria-hidden="true">
-      <span class="client-tag">IndiaMart</span>
-      <span class="client-tag">SkyWaltz</span>
-      <span class="client-tag">ePravesh</span>
-      <span class="client-tag">AutomationEdge</span>
-      <span class="client-tag">Mobileware Technologies</span>
-      <span class="client-tag">Femelife Fertility</span>
-      <span class="client-tag">Om Logistics</span>
-      <span class="client-tag">WhyMinds AI</span>
+    <div class="marquee-track">
+      <span class="client-tag" aria-hidden="true">Doorstep Health</span>
+      <span class="client-tag" aria-hidden="true">BPC</span>
+      <span class="client-tag" aria-hidden="true">Mascot Dynamics</span>
+      <span class="client-tag" aria-hidden="true">CLN Energy</span>
+      <span class="client-tag" aria-hidden="true">iCaltech Innovations</span>
+      <span class="client-tag" aria-hidden="true">Entraco BKS</span>
+      <span class="client-tag" aria-hidden="true">Siddhivinayak Agro</span>
+      <span class="client-tag" aria-hidden="true">SkyWaltz</span>
+      <span class="client-tag" aria-hidden="true">Purple Bus</span>
+      <span class="client-tag" aria-hidden="true">Newaskar Logistics</span>
+      <span class="client-tag" aria-hidden="true">Vilas Javdekar Associates</span>
+      <span class="client-tag" aria-hidden="true">Beep</span>
     </div>
   </div>
 </div>
